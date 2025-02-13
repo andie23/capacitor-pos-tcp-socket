@@ -1,3 +1,9 @@
+export interface SocketParams {
+  host: string;
+  port: number;
+  base64BinaryData: string;
+}
+
 export interface PosTcpSocketPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  sendToSocket(options: SocketParams): Promise<void>;
 }

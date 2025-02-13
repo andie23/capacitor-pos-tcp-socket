@@ -13,26 +13,37 @@ npx cap sync
 
 <docgen-index>
 
-* [`echo(...)`](#echo)
+* [`sendToSocket(...)`](#sendtosocket)
+* [Interfaces](#interfaces)
 
 </docgen-index>
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
 
-### echo(...)
+### sendToSocket(...)
 
 ```typescript
-echo(options: { value: string; }) => Promise<{ value: string; }>
+sendToSocket(options: SocketParams) => Promise<void>
 ```
 
-| Param         | Type                            |
-| ------------- | ------------------------------- |
-| **`options`** | <code>{ value: string; }</code> |
-
-**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+| Param         | Type                                                  |
+| ------------- | ----------------------------------------------------- |
+| **`options`** | <code><a href="#socketparams">SocketParams</a></code> |
 
 --------------------
+
+
+### Interfaces
+
+
+#### SocketParams
+
+| Prop                   | Type                |
+| ---------------------- | ------------------- |
+| **`host`**             | <code>string</code> |
+| **`port`**             | <code>number</code> |
+| **`base64BinaryData`** | <code>string</code> |
 
 </docgen-api>
 # capacitor-pos-tcp-socket
